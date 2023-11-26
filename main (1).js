@@ -9,9 +9,9 @@ const height = (canvas.height = window.innerHeight);
 // function to generate random number
 
 function random(min, max) {
-  const num = Math.floor(Math.random() * (max - min + 1)) + min;
-  return num;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 
 // function to generate random color
 
@@ -20,6 +20,7 @@ function randomRGB() {
 }
 
 class Ball {
+
   constructor(x, y, velX, velY, color, size) {
     this.x = x;
     this.y = y;
